@@ -45,7 +45,7 @@ log_info "Starting Zsh environment configuration on Fedora 42..."
 
 # 1. Install system dependencies (Zsh, git, curl, wget, fontconfig, fzf)
 log_info "Installing system dependencies (zsh, git, curl, wget, fontconfig, util-linux-user, fzf)..."
-sudo dnf install -y zsh git curl wget fontconfig util-linux-user fzf unzip
+sudo dnf update && dnf install -y zsh git curl wget fontconfig util-linux-user fzf unzip
 
 # 2. Install JetBrainsMono Nerd Font
 log_info "Installing JetBrainsMono Nerd Font..."
